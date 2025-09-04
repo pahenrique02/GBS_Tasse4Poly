@@ -32,3 +32,32 @@ run_pipeline.pl  -Xmx12g -fork1 -TagCountToFastqPlugin \
 -i ./tagCounts/AHVLYCDRX3_1.cnt  \
 -o ./mergedTagCounts/myMasterGBSTagsAHVLYCDRX3.fq \
 -c 1  -endPlugin -runfork1 | tee ./logs/VCFCallingStep02.log.txt
+
+#Prepping the reference genome
+echo 'Indexing the reference genome'
+# If you have a fasta file with multiple sequences, you need to create a .fai
+
+bwa index -a bwtsw SofficinarumxspontaneumR570_771_v2.0.hardmasked.fa
+
+bwa aln -t 6 reference/R570Header_Simplified.fa mergedTagCounts/myMasterGBSTags.fq > mergedTagCounts/myMasterGBSTagsR570.sai
+
+bwa samse reference/CollapsedMethyl.fa mergedTagCounts/myMasterGBSTagsAHVLYCDRX3.sai mergedTagCounts/myMasterGBSTagsAHVLYCDRX3.fq > mergedTagCounts/myMasterGBSTagsAHVLYCDRX3.sam 
+
+samtools flagstat mergedTagCounts/myMasterGBSTags.sam
+
+run_pipeline.pl -Xmx36g -fork1 -SAMConverterPlugin -i mergedTagCounts/alignment.sam -o topm/alignment.topm -endPlugin -runfork1 | tee VCF_NEW_CallingStep05.log.txt
+
+run_pipeline.pl  -Xmx36g -fork1 -FastqToTBTPlugin -i fastq -k ./barcodes/Key161.txt -e PstI-MseI -o tbt/NEW -sh -m topm/alignment.topm -endPlugin -runfork1 | tee VCF_NEW_CallingSte06.log.txt
+
+run_pipeline.pl  -Xmx20g -fork1 -MergeTagsByTaxaFilesPlugin  -i tbt/R570-o mergedTBT//alignment.tbt.shrt -x -endPlugin -runfork1 | tee VCF_NEW_CallingSte07.log.txt
+
+
+run_pipeline.pl -Xmx48g -fork1 -DiscoverySNPCallerPlugin -i mergedTBT/AHVLYCDRX3+HFLKYBGX9myStudy.tbt.shrt -sh -m topm/AHVLYCDRX3+HFLKYBGX9myMasterGBSTags.topm -mUpd topm/AHVLYCDRX3+HFLKYBGX9myMasterTagsWithVariants.topm -o hapmap/raw/AHVLYCDRX3+HFLKYBGX9myGBSGenos_chr+.hmp.txt -vcf    -inclGaps  -ref reference/CollapsedMethyl.fa  -sC 1 -eC 1 -endPlugin -runfork1 | tee VCFCallingSte08.log.txt
+
+run_pipeline.pl -Xmx32g -fork1 -MergeDuplicateSNPsPlugin -hmp hapmap/raw/AHVLYCDRX31HFLKYBGX9myGBSGenos_chr1.hmp.txt -o hapmap/mergedSNPs/myGBSGenos_mergedSNPs_chr+.hmp.txt   -misMat 0.3 -callHets  -sC 1 -eC 1 -endPlugin -runfork1  | tee VCFCallingSte09.log.txt
+
+run_pipeline.pl -Xmx32g -fork1 -MergeIdenticalTaxaPlugin -hmp hapmap/mergedSNPs/AHVLYCDRX3myGBSGenos_mergedSNPs_chr+.hmp.txt -o hapmap/mergedTaxa/AHVLYCDRX3myGenos_taxaMerged_chr+.hmp.txt.gz -hetFreq 0.8 -sC 1 -eC 1 -endPlugin -runfork1  | tee VCFCallingSte10.log.txt
+
+run_pipeline.pl -Xmx5g -fork1 -h AHVLYCDRX3+HFLKYBGX9myGBSGenos_chr+.hmp.txt -export -exportType VCF -runfork1
+
+run_pipeline.pl -Xmx6g -fork1 -GBSHapMapFiltersPlugin -hmp ./AHVLYCDRX3myGBSGenos_chr1.hmp.txt -hLD -mnTCov 0.05 -mnSCov 0.05 -mnMAF 0.05 -o  DepthFiltered2.hmp.txt -sC 1 -eC 1 -endPlugin -runfork1
