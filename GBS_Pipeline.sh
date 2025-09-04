@@ -18,10 +18,17 @@ mkdir -p topm tbt tagCounts reference mergedTagCounts mergedTBT logs hapmap fast
 # and in the fastq folder with your fastq files using the flowcell name and lanes 
 # with the extension _fastq.txt.gz.
 
+echo 'Starting the pipeline'
+
 run_pipeline.pl -Xmx12g -fork1 -FastqToTagCountPlugin \
   -i ./fastq \
   -k ./barcodes/Key161.txt \
   -e PstI-MseI -c 1 \
   -o tagCounts \
   -endPlugin -runfork1 | tee ./logs/VCFCallingstep01.log.txt
-#teste
+
+echo 'Merging TagCounts'
+run_pipeline.pl  -Xmx12g -fork1 -TagCountToFastqPlugin \
+-i ./tagCounts/AHVLYCDRX3_1.cnt  \
+-o ./mergedTagCounts/myMasterGBSTagsAHVLYCDRX3.fq \
+-c 1  -endPlugin -runfork1 | tee ./logs/VCFCallingStep02.log.txt
