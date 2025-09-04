@@ -1,0 +1,83 @@
+/home/phenrique/tassel4-poly/lib/batik-gui-util.jar:/home/phenrique/tassel4-poly/lib/batik-util.jar:/home/phenrique/tassel4-poly/lib/batik-xml.jar:/home/phenrique/tassel4-poly/lib/biojava3-alignment-3.0.jar:/home/phenrique/tassel4-poly/lib/guava-14.0.1.jar:/home/phenrique/tassel4-poly/lib/mail-1.4.jar:/home/phenrique/tassel4-poly/lib/commons-math-2.2.jar:/home/phenrique/tassel4-poly/lib/LiuExt.jar:/home/phenrique/tassel4-poly/lib/xml.jar:/home/phenrique/tassel4-poly/lib/batik-gvt.jar:/home/phenrique/tassel4-poly/lib/biojava3-phylo-3.0.jar:/home/phenrique/tassel4-poly/lib/poi-3.0.1-FINAL-20070705.jar:/home/phenrique/tassel4-poly/lib/colt.jar:/home/phenrique/tassel4-poly/lib/jcommon-1.0.6.jar:/home/phenrique/tassel4-poly/lib/batik-css.jar:/home/phenrique/tassel4-poly/lib/xercesImpl.jar:/home/phenrique/tassel4-poly/lib/junit-4.10.jar:/home/phenrique/tassel4-poly/lib/ejml-0.23.jar:/home/phenrique/tassel4-poly/lib/batik-ext.jar:/home/phenrique/tassel4-poly/lib/batik-awt-util.jar:/home/phenrique/tassel4-poly/lib/xmlParserAPIs.jar:/home/phenrique/tassel4-poly/lib/itextpdf-5.1.0.jar:/home/phenrique/tassel4-poly/lib/forester.jar:/home/phenrique/tassel4-poly/lib/batik-svg-dom.jar:/home/phenrique/tassel4-poly/lib/cisd-jhdf5-batteries_included_lin_win_mac.jar:/home/phenrique/tassel4-poly/lib/batik-dom.jar:/home/phenrique/tassel4-poly/lib/batik-svggen.jar:/home/phenrique/tassel4-poly/lib/jfreechart-1.0.3.jar:/home/phenrique/tassel4-poly/lib/batik-parser.jar:/home/phenrique/tassel4-poly/lib/geronimo-spec-activation-1.0.2-rc4.jar:/home/phenrique/tassel4-poly/lib/log4j-1.2.13.jar:/home/phenrique/tassel4-poly/lib/biojava3-core-3.0.jar:/home/phenrique/tassel4-poly/dist/sTASSEL.jar
+Memory Settings: -Xms512m -Xmx32g
+Tassel Pipeline Arguments: -fork1 -TagCountToFastqPlugin -i ./mergedTagCounts/myMasterGBSTags.cnt -o ./mergedTagCounts/myMasterGBSTags.fq -c 1 -endPlugin -runfork1
+[main] INFO net.maizegenetics.pipeline.TasselPipeline - Tassel Version: 4.3.7  Date: April 17, 2014
+[main] INFO net.maizegenetics.pipeline.TasselPipeline - Max Available Memory Reported by JVM: 32768 MB
+net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - Opened the input file: ./mergedTagCounts/myMasterGBSTags.cnt  nTags=17298854
+tagsRead=1 tagsWritten=1 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGAAAAAAAAAAAAAAAAAAAAACAATTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+tagsRead=500001 tagsWritten=500001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGAACTGACCATCTCGGCTGCCATTAGGATAGATCAAAGCAATGCAACTTGTAGAATCGAT
+tagsRead=1000001 tagsWritten=1000001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGAATTGGGACTAGTGACTGCTAGTTCAGTGAGCAGTTGTTGAGCTCTACTGGCGGTAGTG
+tagsRead=1500001 tagsWritten=1500001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGACGTATCTTCAGTTCACTGTTCTCGACTGTCAGCCCAGCTGTGTCTCTCTGTTTGTATT
+tagsRead=2000001 tagsWritten=2000001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGAGCCAATCGTTGTCAGTTTGTCACTGACTCACTTGGTGTGTGTGTGTGCGCGCGCGCGC
+tagsRead=2500001 tagsWritten=2500001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGAGTGCTAATCCAGCCCCAGTCCCGGCCGGGCAGCGGACGCGCCTTACAGATCGGAAGAT
+tagsRead=3000001 tagsWritten=3000001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGATCTTCTTCAGTCAATGATAAACAAAGCTAAAGATATGGGTTTGTTACAGATCGGAAGA
+tagsRead=3500001 tagsWritten=3500001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGATTTTATTTCGCTTGTGGGCAAGTGGTGATCAGAGCTTGTCTCTGTCGGCATTACTTAT
+tagsRead=4000001 tagsWritten=4000001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGCAATTAGAAGGCGTGTAAATATTCTATGCGTTCAGGAGACTAAATGGAAGGGCTAGAAG
+tagsRead=4500001 tagsWritten=4500001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGCAGAATTCATCCTGTGCTGCATGTGTCTCAACTCAAGAAACATGTGCCCAAAGATGTGT
+tagsRead=5000001 tagsWritten=5000001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGCAGGCCTTGATGCAAGCAATGATACCGGTCTTGATGCTTTACAGATCGGAAGATCGCGT
+tagsRead=5500001 tagsWritten=5500001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGCATGTAGGAGCGTGCGGTGCGGTGCTGCTTTTACAGATCGGAAGATCTCGTATGCCGTC
+tagsRead=6000001 tagsWritten=6000001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGCCATTTCTTCCTCACAAATGATGACGCACGTGACCTTGTCATGCCAAGAAATGGAAGAA
+tagsRead=6500001 tagsWritten=6500001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGCCGGAGCTAGCGGCGCGCGTAGACCTGCACCAGATCGGAAGATCTCGTATGCCGTCTTC
+tagsRead=7000001 tagsWritten=7000001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGCGACAGAGGCTGCGTTGGGCGATGATGGTGCCATGCACGGACCAGGATTCAGGACGGAA
+tagsRead=7500001 tagsWritten=7500001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGCGGAGGCCTTTCCTTGTTCTAACGCGGATTGTGAAGTAAACCTGCTCTGAGAAGAGTTA
+tagsRead=8000001 tagsWritten=8000001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGCTAATCAACACTCTCATCCAAGACAAGGCCAAGGCCAATTCCACATCCAAGGGTGGCCC
+tagsRead=8500001 tagsWritten=8500001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGCTCGAGCGTGAGCCATTGGTATTTTCTTGATCTTGCAGGTGCTGGTGGTTGCTTTGATT
+tagsRead=9000001 tagsWritten=9000001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGCTGCTGTGGCTTCCTCGTTGACTGGATGTACAGATCGGAAGATCTCGTATGCCGTCTTC
+tagsRead=9500001 tagsWritten=9500001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGCTTGGCTATGATACAGAAATAAGTGATCGCTAGAGGCTAGAGCTGCATATGTCAAAAGG
+tagsRead=10000001 tagsWritten=10000001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGGACCAATCCAAGGACGCCTGCTACAGATGCTCCCACCCTCCGGCTTGCTGGATTACAGA
+tagsRead=10500001 tagsWritten=10500001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGGATACACATTTGTTAGTCAAACCTATGCTGCAAAGCAACAAAGATGTCCACATACACAC
+tagsRead=11000001 tagsWritten=11000001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGGCATATTTCCTCCTCTATCTGATATAGCGGACCGGGTACCAGATCCGGTGCGGACAGTC
+tagsRead=11500001 tagsWritten=11500001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGGCGGGCAAAAGAGCAGAGAATGCAACTTAGTCAATGCACGGATAATTACAGATCGGAAG
+tagsRead=12000001 tagsWritten=12000001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGGGAGGTTTGACAAAACCACAATTGACAATTGTTATGATGGCAATCAGATCGGAAGATCT
+tagsRead=12500001 tagsWritten=12500001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGGGTCCTCAGAGATTTTAGCAGTTGCAGATGATGTAGAGGCACATATGGGCATCCACTGA
+tagsRead=13000001 tagsWritten=13000001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGGTCGATCTGCGACCACCGATGCGAGCTCGATTTTGTCGTGTCTTACAGATCGGAAGATC
+tagsRead=13500001 tagsWritten=13500001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGGTTCATCGCTCTCATTTTAGTCCCATACCGCTAAACGAAGTCAGAGCAACCCAACTTAC
+tagsRead=14000001 tagsWritten=14000001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGTACGATCGGATTAGCGATGCAAGCGGACGCAGGCCGCCATACCTGCAAAAAAAACAGTC
+tagsRead=14500001 tagsWritten=14500001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGTCAAATAAAGATTTCCAAGTAATATGCAGCCATGAAAAGGTGACAATTACAGATCTGAA
+tagsRead=15000001 tagsWritten=15000001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGTCGCTGCCCCCAGTTTCGAGTCTGGTTCCTTACAGATCTGAAGATCTCGTATGACCTCT
+tagsRead=15500001 tagsWritten=15500001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGTGATGGAAGCCAATAGCGAGATGACTGGGTTAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+tagsRead=16000001 tagsWritten=16000001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGTGGCCACTGGGCGCCCACTAGACATGCACTAGTCTATACGACACGACAACTCGATCTTT
+tagsRead=16500001 tagsWritten=16500001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGTTATCTCCCAAAAACTTGAGCCGCGTTCACTTCCCCCTCCCAACCCAAAATATTTCCTC
+tagsRead=17000001 tagsWritten=17000001 
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - TGCAGTTGTCGCTGTTCCGTTGGGTGTCTTGAAAGCAAAAACAATTACAGATCGGAAGATCTCG
+Finished converting binary tag count file to fastq.
+Total number of tags read: 17298854
+Total number of tags written: 17298854 (above minCount of 1)
+Ouput fastq file: ./mergedTagCounts/myMasterGBSTags.fq
+
+

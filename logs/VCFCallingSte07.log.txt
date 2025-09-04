@@ -1,0 +1,276 @@
+/home/phenrique/tassel4-poly/lib/batik-gui-util.jar:/home/phenrique/tassel4-poly/lib/batik-util.jar:/home/phenrique/tassel4-poly/lib/batik-xml.jar:/home/phenrique/tassel4-poly/lib/biojava3-alignment-3.0.jar:/home/phenrique/tassel4-poly/lib/guava-14.0.1.jar:/home/phenrique/tassel4-poly/lib/mail-1.4.jar:/home/phenrique/tassel4-poly/lib/commons-math-2.2.jar:/home/phenrique/tassel4-poly/lib/LiuExt.jar:/home/phenrique/tassel4-poly/lib/xml.jar:/home/phenrique/tassel4-poly/lib/batik-gvt.jar:/home/phenrique/tassel4-poly/lib/biojava3-phylo-3.0.jar:/home/phenrique/tassel4-poly/lib/poi-3.0.1-FINAL-20070705.jar:/home/phenrique/tassel4-poly/lib/colt.jar:/home/phenrique/tassel4-poly/lib/jcommon-1.0.6.jar:/home/phenrique/tassel4-poly/lib/batik-css.jar:/home/phenrique/tassel4-poly/lib/xercesImpl.jar:/home/phenrique/tassel4-poly/lib/junit-4.10.jar:/home/phenrique/tassel4-poly/lib/ejml-0.23.jar:/home/phenrique/tassel4-poly/lib/batik-ext.jar:/home/phenrique/tassel4-poly/lib/batik-awt-util.jar:/home/phenrique/tassel4-poly/lib/xmlParserAPIs.jar:/home/phenrique/tassel4-poly/lib/itextpdf-5.1.0.jar:/home/phenrique/tassel4-poly/lib/forester.jar:/home/phenrique/tassel4-poly/lib/batik-svg-dom.jar:/home/phenrique/tassel4-poly/lib/cisd-jhdf5-batteries_included_lin_win_mac.jar:/home/phenrique/tassel4-poly/lib/batik-dom.jar:/home/phenrique/tassel4-poly/lib/batik-svggen.jar:/home/phenrique/tassel4-poly/lib/jfreechart-1.0.3.jar:/home/phenrique/tassel4-poly/lib/batik-parser.jar:/home/phenrique/tassel4-poly/lib/geronimo-spec-activation-1.0.2-rc4.jar:/home/phenrique/tassel4-poly/lib/log4j-1.2.13.jar:/home/phenrique/tassel4-poly/lib/biojava3-core-3.0.jar:/home/phenrique/tassel4-poly/dist/sTASSEL.jar
+Memory Settings: -Xms512m -Xmx36g
+Tassel Pipeline Arguments: -fork1 -MergeTagsByTaxaFilesPlugin -i tbt -o mergedTBT/myStudy.tbt.shrt -x -endPlugin -runfork1
+[main] INFO net.maizegenetics.pipeline.TasselPipeline - Tassel Version: 4.3.7  Date: April 17, 2014
+[main] INFO net.maizegenetics.pipeline.TasselPipeline - Max Available Memory Reported by JVM: 36864 MB
+INFO - Merging the following .tbt.bin or .tbt.byte or .tbt.shrt files...
+[main] INFO net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin - Merging the following .tbt.bin or .tbt.byte or .tbt.shrt files...
+INFO - /srv/sugar_cane_flowering/raw_data/tbt/AHVLYCDRX3_1.tbt.shrt
+[main] INFO net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin - /srv/sugar_cane_flowering/raw_data/tbt/AHVLYCDRX3_1.tbt.shrt
+INFO - /srv/sugar_cane_flowering/raw_data/tbt/HFLKYBGX9_1.tbt.shrt
+[main] INFO net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin - /srv/sugar_cane_flowering/raw_data/tbt/HFLKYBGX9_1.tbt.shrt
+INFO - ...to "mergedTBT/myStudy.tbt.shrt".
+[main] INFO net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin - ...to "mergedTBT/myStudy.tbt.shrt".
+net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin
+INFO - Mutable Tag Count Created.  MaxTags:200000000
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin - Mutable Tag Count Created.  MaxTags:200000000
+INFO - CurrentSize:0
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin - CurrentSize:0
+INFO - Scanning /srv/sugar_cane_flowering/raw_data/tbt/AHVLYCDRX3_1.tbt.shrt (file 1 of 2).
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin - Scanning /srv/sugar_cane_flowering/raw_data/tbt/AHVLYCDRX3_1.tbt.shrt (file 1 of 2).
+nBytes to end of taxa names: 4592 
+Read tag0
+Read tag1000000
+Read tag2000000
+Read tag3000000
+Read tag4000000
+Read tag5000000
+Read tag6000000
+Read tag7000000
+Read tag8000000
+Read tag9000000
+Read tag10000000
+Read tag11000000
+Read tag12000000
+Read tag13000000
+Number of Taxa in file:152
+Number of Haplotypes in file:13827918
+INFO - CurrentSize:13827918
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin - CurrentSize:13827918
+INFO - Current Taxa:152
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin - Current Taxa:152
+Position index sort begin.
+Position index sort end.
+Position index sort begin.
+Position index sort end.
+Rows collapsed:0
+Unique tags retained:13827918
+INFO - CurrentSize:13827918
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin - CurrentSize:13827918
+INFO - Size:200000000
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin - Size:200000000
+INFO - Scanning /srv/sugar_cane_flowering/raw_data/tbt/HFLKYBGX9_1.tbt.shrt (file 2 of 2).
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin - Scanning /srv/sugar_cane_flowering/raw_data/tbt/HFLKYBGX9_1.tbt.shrt (file 2 of 2).
+nBytes to end of taxa names: 371 
+Read tag0
+Read tag1000000
+Number of Taxa in file:8
+Number of Haplotypes in file:1542732
+INFO - CurrentSize:15370650
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin - CurrentSize:15370650
+INFO - Current Taxa:160
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin - Current Taxa:160
+Position index sort begin.
+Position index sort end.
+Position index sort begin.
+Position index sort end.
+Rows collapsed:1082024
+Unique tags retained:14288626
+INFO - CurrentSize:14288626
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin - CurrentSize:14288626
+INFO - Size:200000000
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin - Size:200000000
+INFO - Size:14288626
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin - Size:14288626
+nBytes to end of taxa names: 2424 
+Read tag0
+Read tag1000000
+Read tag2000000
+Read tag3000000
+Read tag4000000
+Read tag5000000
+Read tag6000000
+Read tag7000000
+Read tag8000000
+Read tag9000000
+Read tag10000000
+Read tag11000000
+Read tag12000000
+Read tag13000000
+Read tag14000000
+Number of Taxa in file:160
+Number of Haplotypes in file:14288626
+nBytes to end of taxa names: 2424 
+Read tag0
+Read tag1000000
+Read tag2000000
+Read tag3000000
+Read tag4000000
+Read tag5000000
+Read tag6000000
+Read tag7000000
+Read tag8000000
+Read tag9000000
+Read tag10000000
+Read tag11000000
+Read tag12000000
+Read tag13000000
+Read tag14000000
+Number of Taxa in file:160
+Number of Haplotypes in file:14288626
+INFO - Scanning /srv/sugar_cane_flowering/raw_data/tbt/AHVLYCDRX3_1.tbt.shrt (file 1 of 2).
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin - Scanning /srv/sugar_cane_flowering/raw_data/tbt/AHVLYCDRX3_1.tbt.shrt (file 1 of 2).
+nBytes to end of taxa names: 4592 
+Read tag0
+Read tag1000000
+Read tag2000000
+Read tag3000000
+Read tag4000000
+Read tag5000000
+Read tag6000000
+Read tag7000000
+Read tag8000000
+Read tag9000000
+Read tag10000000
+Read tag11000000
+Read tag12000000
+Read tag13000000
+Number of Taxa in file:152
+Number of Haplotypes in file:13827918
+Tag:95118 BitSet:800000 
+Tag:120197 BitSet:1000000 
+Tag:182704 BitSet:1500000 
+Tag:342131 BitSet:2800000 
+Tag:394729 BitSet:3200000 
+Tag:1014681 BitSet:8200000 
+Tag:1117309 BitSet:9000000 
+Tag:1232575 BitSet:9900000 
+Tag:1319335 BitSet:10600000 
+Tag:1407781 BitSet:11300000 
+Tag:1556786 BitSet:12500000 
+Tag:1661108 BitSet:13300000 
+Tag:1888587 BitSet:15100000 
+Tag:1952877 BitSet:15600000 
+Tag:2002782 BitSet:16000000 
+Tag:2064051 BitSet:16500000 
+Tag:2367158 BitSet:18900000 
+Tag:2403479 BitSet:19200000 
+Tag:2551322 BitSet:20400000 
+Tag:2624781 BitSet:21000000 
+Tag:2754869 BitSet:22100000 
+Tag:2776897 BitSet:22300000 
+Tag:2978575 BitSet:23900000 
+Tag:3067644 BitSet:24600000 
+Tag:3319139 BitSet:26600000 
+Tag:3372160 BitSet:27000000 
+Tag:3385242 BitSet:27100000 
+Tag:3438062 BitSet:27500000 
+Tag:3527507 BitSet:28200000 
+Tag:3552780 BitSet:28400000 
+Tag:3760534 BitSet:30000000 
+Tag:3773601 BitSet:30100000 
+Tag:3917019 BitSet:31200000 
+Tag:3982372 BitSet:31700000 
+Tag:4185658 BitSet:33300000 
+Tag:4260992 BitSet:33900000 
+Tag:4274104 BitSet:34000000 
+Tag:4298596 BitSet:34200000 
+Tag:4336832 BitSet:34500000 
+Tag:4374562 BitSet:34800000 
+Tag:4411701 BitSet:35100000 
+Tag:4546205 BitSet:36200000 
+Tag:4697237 BitSet:37400000 
+Tag:4910752 BitSet:39100000 
+Tag:4922769 BitSet:39200000 
+Tag:5012777 BitSet:39900000 
+Tag:5037735 BitSet:40100000 
+Tag:5153529 BitSet:41000000 
+Tag:5317570 BitSet:42300000 
+Tag:5370291 BitSet:42700000 
+Tag:5395336 BitSet:42900000 
+Tag:5469368 BitSet:43500000 
+Tag:5557797 BitSet:44200000 
+Tag:5624321 BitSet:44700000 
+Tag:5718287 BitSet:45400000 
+Tag:5730769 BitSet:45500000 
+Tag:5744513 BitSet:45600000 
+Tag:5973630 BitSet:47300000 
+Tag:5986834 BitSet:47400000 
+Tag:6054283 BitSet:47900000 
+Tag:6092432 BitSet:48200000 
+Tag:6212307 BitSet:49100000 
+Tag:6251611 BitSet:49400000 
+Tag:6276655 BitSet:49600000 
+Tag:6375924 BitSet:50400000 
+Tag:6440049 BitSet:50900000 
+Tag:6501888 BitSet:51400000 
+Tag:6561375 BitSet:51900000 
+Tag:7180882 BitSet:56900000 
+Tag:7233095 BitSet:57300000 
+Tag:7331762 BitSet:58100000 
+Tag:7441112 BitSet:59000000 
+Tag:7575980 BitSet:60100000 
+Tag:7623091 BitSet:60500000 
+Tag:7945932 BitSet:63100000 
+Tag:7997559 BitSet:63500000 
+Tag:8202110 BitSet:65100000 
+Tag:8443402 BitSet:67000000 
+Tag:8506979 BitSet:67500000 
+Tag:8580322 BitSet:68100000 
+Tag:8671347 BitSet:68800000 
+Tag:8763413 BitSet:69500000 
+Tag:8865150 BitSet:70300000 
+Tag:9072591 BitSet:71900000 
+Tag:9152120 BitSet:72500000 
+Tag:9190050 BitSet:72800000 
+Tag:9255217 BitSet:73300000 
+Tag:9280093 BitSet:73500000 
+Tag:9305291 BitSet:73700000 
+Tag:9529648 BitSet:75500000 
+Tag:9554578 BitSet:75700000 
+Tag:9656601 BitSet:76500000 
+Tag:9826891 BitSet:77800000 
+Tag:9931227 BitSet:78600000 
+Tag:9954437 BitSet:78800000 
+Tag:10144420 BitSet:80300000 
+Tag:10188419 BitSet:80700000 
+Tag:10426564 BitSet:82600000 
+Tag:10439844 BitSet:82700000 
+Tag:10575267 BitSet:83800000 
+Tag:10747281 BitSet:85200000 
+Tag:10784403 BitSet:85500000 
+Tag:10930542 BitSet:86700000 
+Tag:11012004 BitSet:87400000 
+Tag:11072796 BitSet:87900000 
+Tag:11170948 BitSet:88700000 
+Tag:11479162 BitSet:91200000 
+Tag:11491232 BitSet:91300000 
+Tag:11540017 BitSet:91700000 
+Tag:11552118 BitSet:91800000 
+Tag:11822008 BitSet:94000000 
+Tag:11834541 BitSet:94100000 
+Tag:11958546 BitSet:95100000 
+Tag:12207700 BitSet:97000000 
+Tag:12255545 BitSet:97400000 
+Tag:12267921 BitSet:97500000 
+Tag:12457468 BitSet:99000000 
+Tag:12571549 BitSet:99900000 
+Tag:12583975 BitSet:100000000 
+Tag:12609665 BitSet:100200000 
+Tag:12732981 BitSet:101200000 
+Tag:12923146 BitSet:102700000 
+Tag:13091821 BitSet:104100000 
+Tag:13103563 BitSet:104200000 
+Tag:13176066 BitSet:104800000 
+Tag:13317799 BitSet:106000000 
+Tag:13412405 BitSet:106800000 
+Tag:13436868 BitSet:107000000 
+Tag:13534008 BitSet:107800000 
+Tag:13798791 BitSet:110100000 
+INFO - Scanning /srv/sugar_cane_flowering/raw_data/tbt/HFLKYBGX9_1.tbt.shrt (file 2 of 2).
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin - Scanning /srv/sugar_cane_flowering/raw_data/tbt/HFLKYBGX9_1.tbt.shrt (file 2 of 2).
+nBytes to end of taxa names: 371 
+Read tag0
+Read tag1000000
+Number of Taxa in file:8
+Number of Haplotypes in file:1542732
+Tag:12127 BitSet:110400000 
+Tag:114827 BitSet:110600000 
+Tag:270899 BitSet:110900000 
+Tag:645637 BitSet:111600000 
+Tag:860067 BitSet:112000000 
+Tag:1072492 BitSet:112400000 
+Tag:1178753 BitSet:112600000 
+Tag:1336710 BitSet:112900000 
+Tag:1442697 BitSet:113100000 
+Tag:1494629 BitSet:113200000 

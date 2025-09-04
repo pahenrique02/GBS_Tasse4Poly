@@ -1,0 +1,47 @@
+/home/phenrique/tassel4-poly/lib/batik-gui-util.jar:/home/phenrique/tassel4-poly/lib/batik-util.jar:/home/phenrique/tassel4-poly/lib/batik-xml.jar:/home/phenrique/tassel4-poly/lib/biojava3-alignment-3.0.jar:/home/phenrique/tassel4-poly/lib/guava-14.0.1.jar:/home/phenrique/tassel4-poly/lib/mail-1.4.jar:/home/phenrique/tassel4-poly/lib/commons-math-2.2.jar:/home/phenrique/tassel4-poly/lib/LiuExt.jar:/home/phenrique/tassel4-poly/lib/xml.jar:/home/phenrique/tassel4-poly/lib/batik-gvt.jar:/home/phenrique/tassel4-poly/lib/biojava3-phylo-3.0.jar:/home/phenrique/tassel4-poly/lib/poi-3.0.1-FINAL-20070705.jar:/home/phenrique/tassel4-poly/lib/colt.jar:/home/phenrique/tassel4-poly/lib/jcommon-1.0.6.jar:/home/phenrique/tassel4-poly/lib/batik-css.jar:/home/phenrique/tassel4-poly/lib/xercesImpl.jar:/home/phenrique/tassel4-poly/lib/junit-4.10.jar:/home/phenrique/tassel4-poly/lib/ejml-0.23.jar:/home/phenrique/tassel4-poly/lib/batik-ext.jar:/home/phenrique/tassel4-poly/lib/batik-awt-util.jar:/home/phenrique/tassel4-poly/lib/xmlParserAPIs.jar:/home/phenrique/tassel4-poly/lib/itextpdf-5.1.0.jar:/home/phenrique/tassel4-poly/lib/forester.jar:/home/phenrique/tassel4-poly/lib/batik-svg-dom.jar:/home/phenrique/tassel4-poly/lib/cisd-jhdf5-batteries_included_lin_win_mac.jar:/home/phenrique/tassel4-poly/lib/batik-dom.jar:/home/phenrique/tassel4-poly/lib/batik-svggen.jar:/home/phenrique/tassel4-poly/lib/jfreechart-1.0.3.jar:/home/phenrique/tassel4-poly/lib/batik-parser.jar:/home/phenrique/tassel4-poly/lib/geronimo-spec-activation-1.0.2-rc4.jar:/home/phenrique/tassel4-poly/lib/log4j-1.2.13.jar:/home/phenrique/tassel4-poly/lib/biojava3-core-3.0.jar:/home/phenrique/tassel4-poly/dist/sTASSEL.jar
+Memory Settings: -Xms512m -Xmx36g
+Tassel Pipeline Arguments: -fork1 -SAMConverterPlugin -i mergedTagCounts/myMasterGBSTags.sam -o topm/myMasterGBSTags.topm -endPlugin -runfork1
+[main] INFO net.maizegenetics.pipeline.TasselPipeline - Tassel Version: 4.3.7  Date: April 17, 2014
+[main] INFO net.maizegenetics.pipeline.TasselPipeline - Max Available Memory Reported by JVM: 36864 MB
+net.maizegenetics.gbs.pipeline.SAMConverterPlugin
+Reading SAM format tag alignment from: /srv/sugar_cane_flowering/raw_data/mergedTagCounts/myMasterGBSTags.sam
+Counted 1000000 tags.
+Counted 2000000 tags.
+Counted 3000000 tags.
+Counted 4000000 tags.
+Counted 5000000 tags.
+Counted 6000000 tags.
+Counted 7000000 tags.
+Counted 8000000 tags.
+Counted 9000000 tags.
+Counted 10000000 tags.
+Counted 11000000 tags.
+Counted 12000000 tags.
+Counted 13000000 tags.
+Counted 14000000 tags.
+Counted 15000000 tags.
+Counted 16000000 tags.
+Counted 17000000 tags.
+Found 17298854 tags in SAM file.  Assuming BWA file format.
+Read 0 tags.
+Read 1000000 tags.
+Read 2000000 tags.
+Read 3000000 tags.
+Read 4000000 tags.
+Read 5000000 tags.
+Read 6000000 tags.
+Read 7000000 tags.
+Read 8000000 tags.
+Read 9000000 tags.
+Read 10000000 tags.
+Read 11000000 tags.
+Read 12000000 tags.
+Read 13000000 tags.
+Read 14000000 tags.
+Read 15000000 tags.
+Read 16000000 tags.
+Read 17000000 tags.
+Position index sort begin.
+Position index sort end.
+Tag positions written to:topm/myMasterGBSTags.topm
+Number of tags in file:17298854

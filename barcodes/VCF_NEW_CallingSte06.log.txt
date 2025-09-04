@@ -1,0 +1,18 @@
+/home/phenrique/tassel4-poly/lib/batik-gui-util.jar:/home/phenrique/tassel4-poly/lib/batik-util.jar:/home/phenrique/tassel4-poly/lib/batik-xml.jar:/home/phenrique/tassel4-poly/lib/biojava3-alignment-3.0.jar:/home/phenrique/tassel4-poly/lib/guava-14.0.1.jar:/home/phenrique/tassel4-poly/lib/mail-1.4.jar:/home/phenrique/tassel4-poly/lib/commons-math-2.2.jar:/home/phenrique/tassel4-poly/lib/LiuExt.jar:/home/phenrique/tassel4-poly/lib/xml.jar:/home/phenrique/tassel4-poly/lib/batik-gvt.jar:/home/phenrique/tassel4-poly/lib/biojava3-phylo-3.0.jar:/home/phenrique/tassel4-poly/lib/poi-3.0.1-FINAL-20070705.jar:/home/phenrique/tassel4-poly/lib/colt.jar:/home/phenrique/tassel4-poly/lib/jcommon-1.0.6.jar:/home/phenrique/tassel4-poly/lib/batik-css.jar:/home/phenrique/tassel4-poly/lib/xercesImpl.jar:/home/phenrique/tassel4-poly/lib/junit-4.10.jar:/home/phenrique/tassel4-poly/lib/ejml-0.23.jar:/home/phenrique/tassel4-poly/lib/batik-ext.jar:/home/phenrique/tassel4-poly/lib/batik-awt-util.jar:/home/phenrique/tassel4-poly/lib/xmlParserAPIs.jar:/home/phenrique/tassel4-poly/lib/itextpdf-5.1.0.jar:/home/phenrique/tassel4-poly/lib/forester.jar:/home/phenrique/tassel4-poly/lib/batik-svg-dom.jar:/home/phenrique/tassel4-poly/lib/cisd-jhdf5-batteries_included_lin_win_mac.jar:/home/phenrique/tassel4-poly/lib/batik-dom.jar:/home/phenrique/tassel4-poly/lib/batik-svggen.jar:/home/phenrique/tassel4-poly/lib/jfreechart-1.0.3.jar:/home/phenrique/tassel4-poly/lib/batik-parser.jar:/home/phenrique/tassel4-poly/lib/geronimo-spec-activation-1.0.2-rc4.jar:/home/phenrique/tassel4-poly/lib/log4j-1.2.13.jar:/home/phenrique/tassel4-poly/lib/biojava3-core-3.0.jar:/home/phenrique/tassel4-poly/dist/sTASSEL.jar
+Memory Settings: -Xms512m -Xmx36g
+Tassel Pipeline Arguments: -fork1 -FastqToTBTPlugin -i fastq -k ./barcodes/Key161.txt -e PstI-MseI -o tbt/NEW -sh -m topm/alignment.topm -endPlugin -runfork1
+[main] INFO net.maizegenetics.pipeline.TasselPipeline - Tassel Version: 4.3.7  Date: April 17, 2014
+[main] INFO net.maizegenetics.pipeline.TasselPipeline - Max Available Memory Reported by JVM: 32768 MB
+[main] INFO net.maizegenetics.gbs.pipeline.FastqToTBTPlugin - 
+Usage is as follows:
+-i  Input directory containing .fastq files
+-k  Barcode key file
+-e  Enzyme used to create the GBS library, if it differs from the one listed in the key file.
+-o  Output directory
+-c  Minimum taxa count within a fastq file for a tag to be output (default 1)
+-y  Output to tagsByTaxaByte (tag counts per taxon from 0 to 127) instead of tagsByTaxaBit (0 or 1)
+One of either:
+    -t  Tag count file, OR A
+    -m  Physical map file containing alignments
+
+[main] ERROR net.maizegenetics.pipeline.TasselPipeline - java.lang.IllegalArgumentException: setParameters: The input name you supplied is not a directory: fastq
