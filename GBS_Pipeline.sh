@@ -39,13 +39,15 @@ echo 'Indexing the reference genome'
 
 #### IN THIS STEP USE YOUR REFERENCE GENOME  DIRECTLY IN THE "reference" directory, THE SYMBOLIC LINK IS ONLY FOR SCRIPT TESTING DUE REFERENCE GENOME SIZE NOT BE ABLE TO BE PUSHED TO GITHUB ####
 
-bwa index -a bwtsw ./reference/reference_link
+#bwa index -a bwtsw ./reference/reference_link
 
-# bwa aln -t 6 reference/R570Header_Simplified.fa mergedTagCounts/myMasterGBSTags.fq > mergedTagCounts/myMasterGBSTagsR570.sai
+echo 'Aligning the tags to the reference genome'
 
-# bwa samse reference/CollapsedMethyl.fa mergedTagCounts/myMasterGBSTagsAHVLYCDRX3.sai mergedTagCounts/myMasterGBSTagsAHVLYCDRX3.fq > mergedTagCounts/myMasterGBSTagsAHVLYCDRX3.sam 
+#bwa aln -t 6 reference/reference_link mergedTagCounts/myMasterGBSTagsAHVLYCDRX3.fq > mergedTagCounts/myMasterGBSTagsR570.sai
 
-# samtools flagstat mergedTagCounts/myMasterGBSTags.sam
+#bwa samse reference/reference_link mergedTagCounts/myMasterGBSTagsR570.sai mergedTagCounts/myMasterGBSTagsAHVLYCDRX3.fq > mergedTagCounts/myMasterGBSTagsAHVLYCDRX3.sam 
+
+ samtools flagstat mergedTagCounts/myMasterGBSTagsAHVLYCDRX3.sam
 
 # run_pipeline.pl -Xmx36g -fork1 -SAMConverterPlugin -i mergedTagCounts/alignment.sam -o topm/alignment.topm -endPlugin -runfork1 | tee VCF_NEW_CallingStep05.log.txt
 
