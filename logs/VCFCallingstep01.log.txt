@@ -2,7 +2,7 @@
 Memory Settings: -Xms512m -Xmx12g
 Tassel Pipeline Arguments: -fork1 -FastqToTagCountPlugin -i ./fastq -k ./barcodes/Key161.txt -e PstI-MseI -c 1 -o tagCounts -endPlugin -runfork1
 [main] INFO net.maizegenetics.pipeline.TasselPipeline - Tassel Version: 4.3.7  Date: April 17, 2014
-[main] INFO net.maizegenetics.pipeline.TasselPipeline - Max Available Memory Reported by JVM: 12288 MB
+[main] INFO net.maizegenetics.pipeline.TasselPipeline - Max Available Memory Reported by JVM: 10923 MB
 net.maizegenetics.gbs.pipeline.FastqToTagCountPlugin
 [Thread-0] INFO net.maizegenetics.gbs.pipeline.FastqToTagCountPlugin - Using the following FASTQ files:
 [Thread-0] INFO net.maizegenetics.gbs.pipeline.FastqToTagCountPlugin - /home/phss/Documentos/DataScience/GBS_Tassel4Poly/./fastq/AHVLYCDRX3_1_fastq.txt.gz

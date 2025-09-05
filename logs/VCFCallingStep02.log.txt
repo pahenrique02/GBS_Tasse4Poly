@@ -2,7 +2,7 @@
 Memory Settings: -Xms512m -Xmx12g
 Tassel Pipeline Arguments: -fork1 -TagCountToFastqPlugin -i ./tagCounts/AHVLYCDRX3_1.cnt -o ./mergedTagCounts/myMasterGBSTagsAHVLYCDRX3.fq -c 1 -endPlugin -runfork1
 [main] INFO net.maizegenetics.pipeline.TasselPipeline - Tassel Version: 4.3.7  Date: April 17, 2014
-[main] INFO net.maizegenetics.pipeline.TasselPipeline - Max Available Memory Reported by JVM: 12288 MB
+[main] INFO net.maizegenetics.pipeline.TasselPipeline - Max Available Memory Reported by JVM: 10923 MB
 net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin
 [Thread-0] INFO net.maizegenetics.gbs.pipeline.TagCountToFastqPlugin - Opened the input file: ./tagCounts/AHVLYCDRX3_1.cnt  nTags=63676
 tagsRead=1 tagsWritten=1 
