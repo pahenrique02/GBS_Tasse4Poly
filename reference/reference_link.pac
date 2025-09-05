@@ -1,1 +1,0 @@
-/home/phss/Documentos/DataScience/r570/reference_link.pac

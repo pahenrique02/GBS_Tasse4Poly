@@ -39,19 +39,23 @@ echo 'Indexing the reference genome'
 
 #### IN THIS STEP USE YOUR REFERENCE GENOME  DIRECTLY IN THE "reference" directory, THE SYMBOLIC LINK IS ONLY FOR SCRIPT TESTING DUE REFERENCE GENOME SIZE NOT BE ABLE TO BE PUSHED TO GITHUB ####
 
-#bwa index -a bwtsw ./reference/reference_link
+## If use the methyl filtered reference genome from Grativol et al 2014, fix the header sed -i 's/>Chr/>chr/g' CollapsedMethyl.fa
+## In the further stepes Samtools will recognize the chromosomes only if the header start with "chr" folloed by numbers.
+#bwa index -a bwtsw ./reference/Reference
 
-echo 'Aligning the tags to the reference genome'
+#echo 'Aligning the tags to the reference genome'
 
-#bwa aln -t 6 reference/reference_link mergedTagCounts/myMasterGBSTagsAHVLYCDRX3.fq > mergedTagCounts/myMasterGBSTagsR570.sai
+#bwa aln -t 6 reference/Reference mergedTagCounts/myMasterGBSTagsAHVLYCDRX3.fq > mergedTagCounts/myMasterGBSTagsR570.sai
 
-#bwa samse reference/reference_link mergedTagCounts/myMasterGBSTagsR570.sai mergedTagCounts/myMasterGBSTagsAHVLYCDRX3.fq > mergedTagCounts/myMasterGBSTagsAHVLYCDRX3.sam 
+#bwa samse reference/Reference mergedTagCounts/myMasterGBSTagsR570.sai mergedTagCounts/myMasterGBSTagsAHVLYCDRX3.fq > mergedTagCounts/myMasterGBSTagsAHVLYCDRX3.sam 
 
- samtools flagstat mergedTagCounts/myMasterGBSTagsAHVLYCDRX3.sam
+#echo "Alignment statistics"
 
-# run_pipeline.pl -Xmx36g -fork1 -SAMConverterPlugin -i mergedTagCounts/alignment.sam -o topm/alignment.topm -endPlugin -runfork1 | tee VCF_NEW_CallingStep05.log.txt
+#samtools flagstat mergedTagCounts/myMasterGBSTagsAHVLYCDRX3.sam
 
-# run_pipeline.pl  -Xmx36g -fork1 -FastqToTBTPlugin -i fastq -k ./barcodes/Key161.txt -e PstI-MseI -o tbt/NEW -sh -m topm/alignment.topm -endPlugin -runfork1 | tee VCF_NEW_CallingSte06.log.txt
+#run_pipeline.pl -Xmx12g -fork1 -SAMConverterPlugin -i mergedTagCounts/myMasterGBSTagsAHVLYCDRX3.sam -o topm/alignment.topm -endPlugin -runfork1 | tee ./logs/VCF_NEW_CallingStep05.log.txt
+
+#run_pipeline.pl  -Xmx16g -fork1 -FastqToTBTPlugin -i fastq -k ./barcodes/Key161.txt -e PstI-MseI -o tbt -sh -m topm/alignment.topm -endPlugin -runfork1 | tee ./logs/VCF_NEW_CallingSte06.log.txt
 
 # run_pipeline.pl  -Xmx20g -fork1 -MergeTagsByTaxaFilesPlugin  -i tbt/R570-o mergedTBT//alignment.tbt.shrt -x -endPlugin -runfork1 | tee VCF_NEW_CallingSte07.log.txt
 
