@@ -7,10 +7,7 @@ net.maizegenetics.gbs.pipeline.SAMConverterPlugin
 Reading SAM format tag alignment from: /home/phss/Documentos/DataScience/GBS_Tassel4Poly/mergedTagCounts/myMasterGBSTagsAHVLYCDRX3.sam
 Found 63676 tags in SAM file.  Assuming BWA file format.
 Read 0 tags.
-
-
-SAMConverterPlugin detected a non-numeric chromosome name: Chr2G
-
-Please change the FASTA headers in your reference genome sequence to integers (>1, >2, >3, etc.) OR to 'chr' followed by an integer (>chr1, >chr2, >chr3, etc.)
-
-
+Position index sort begin.
+Position index sort end.
+Tag positions written to:topm/alignment.topm
+Number of tags in file:63676

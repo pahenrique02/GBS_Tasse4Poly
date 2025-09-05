@@ -12,7 +12,7 @@ echo "First, cloning Tassel4Poly repository"
 export PATH=$PATH:$HOME/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly
 
 # Creating the required directories for the analysis
-mkdir -p topm tbt tagCounts reference mergedTagCounts mergedTBT logs hapmap fastq barcodes
+mkdir -p topm tbt tagCounts reference mergedTagCounts mergedTBT logs hapmap/raw fastq barcodes hapmap/mergedSNPs
 
 # Place your reference genome at reference folder, your barcode at barcodes folder 
 # and in the fastq folder with your fastq files using the flowcell name and lanes 
@@ -57,15 +57,30 @@ echo 'Indexing the reference genome'
 
 #run_pipeline.pl  -Xmx16g -fork1 -FastqToTBTPlugin -i fastq -k ./barcodes/Key161.txt -e PstI-MseI -o tbt -sh -m topm/alignment.topm -endPlugin -runfork1 | tee ./logs/VCF_NEW_CallingSte06.log.txt
 
-# run_pipeline.pl  -Xmx20g -fork1 -MergeTagsByTaxaFilesPlugin  -i tbt/R570-o mergedTBT//alignment.tbt.shrt -x -endPlugin -runfork1 | tee VCF_NEW_CallingSte07.log.txt
+#run_pipeline.pl  -Xmx20g -fork1 -MergeTagsByTaxaFilesPlugin  -i tbt/ -o mergedTBT/alignment.tbt.shrt -x -endPlugin -runfork1 | tee ./logs/VCF_NEW_CallingSte07.log.txt
 
+echo 'SNP Calling'
 
-# run_pipeline.pl -Xmx48g -fork1 -DiscoverySNPCallerPlugin -i mergedTBT/AHVLYCDRX3+HFLKYBGX9myStudy.tbt.shrt -sh -m topm/AHVLYCDRX3+HFLKYBGX9myMasterGBSTags.topm -mUpd topm/AHVLYCDRX3+HFLKYBGX9myMasterTagsWithVariants.topm -o hapmap/raw/AHVLYCDRX3+HFLKYBGX9myGBSGenos_chr+.hmp.txt -vcf    -inclGaps  -ref reference/CollapsedMethyl.fa  -sC 1 -eC 1 -endPlugin -runfork1 | tee VCFCallingSte08.log.txt
+#run_pipeline.pl -Xmx20g -fork1 -DiscoverySNPCallerPlugin -i mergedTBT/alignment.tbt.shrt -sh -m topm/alignment.topm -mUpd topm/alignment.topm -o hapmap/raw/myGBSGenos_chr+.hmp.txt -vcf    -inclGaps  -ref reference/Reference  -sC 1 -eC 1 -endPlugin -runfork1 | tee ./logs/VCFCallingSte08.log.txt
 
-# run_pipeline.pl -Xmx32g -fork1 -MergeDuplicateSNPsPlugin -hmp hapmap/raw/AHVLYCDRX31HFLKYBGX9myGBSGenos_chr1.hmp.txt -o hapmap/mergedSNPs/myGBSGenos_mergedSNPs_chr+.hmp.txt   -misMat 0.3 -callHets  -sC 1 -eC 1 -endPlugin -runfork1  | tee VCFCallingSte09.log.txt
+#run_pipeline.pl -Xmx20g -fork1 -MergeDuplicateSNPsPlugin -hmp hapmap/raw/myGBSGenos_chr1.hmp.txt -o hapmap/mergedSNPs/myGBSGenos_mergedSNPs_chr+.hmp.txt   -misMat 0.3 -callHets  -sC 1 -eC 1 -endPlugin -runfork1  | tee ./logs/VCFCallingSte09.log.txt
+#run_pipeline.pl -Xmx20g		-fork1 -MergeDuplicateSNPsPlugin -vcf hapmap/raw/myGBSGenos_chr1.vcf -o hapmap/mergedSNPs/myGBSGenos_mergedSNPs_chr+.vcf -misMat 0.3  -callHets -sC 1 -eC 1 -endPlugin -runfork1 
+#run_pipeline.pl -Xmx20g -fork1 -MergeIdenticalTaxaPlugin -hmp hapmap/mergedSNPs/myGBSGenos_mergedSNPs_chr+.hmp.txt -o hapmap/mergedTaxa/myGenos_taxaMerged_chr+.hmp.txt -hetFreq 0.8 -sC 1 -eC 1 -endPlugin -runfork1  | tee ./logs/VCFCallingSte10.log.txt
 
-# run_pipeline.pl -Xmx32g -fork1 -MergeIdenticalTaxaPlugin -hmp hapmap/mergedSNPs/AHVLYCDRX3myGBSGenos_mergedSNPs_chr+.hmp.txt -o hapmap/mergedTaxa/AHVLYCDRX3myGenos_taxaMerged_chr+.hmp.txt.gz -hetFreq 0.8 -sC 1 -eC 1 -endPlugin -runfork1  | tee VCFCallingSte10.log.txt
+echo 'Converting to VCF'
 
-# run_pipeline.pl -Xmx5g -fork1 -h AHVLYCDRX3+HFLKYBGX9myGBSGenos_chr+.hmp.txt -export -exportType VCF -runfork1
+run_pipeline.pl -Xmx15g -fork1 -h hapmap/mergedTaxa/myGenos_taxaMerged_chr+.hmp.txt -export -exportType VCF -runfork1
 
-# run_pipeline.pl -Xmx6g -fork1 -GBSHapMapFiltersPlugin -hmp ./AHVLYCDRX3myGBSGenos_chr1.hmp.txt -hLD -mnTCov 0.05 -mnSCov 0.05 -mnMAF 0.05 -o  DepthFiltered2.hmp.txt -sC 1 -eC 1 -endPlugin -runfork1
+echo 'Pipeline finished'
+
+echo 'The final VCF files will be filtered with VCFTOOLS'
+
+vcftools \
+  --vcf YOUR_RAW_VCF.vcf \
+  --maf 0.05 \
+  --max-missing 0.75 \
+  --min-alleles 2 \
+  --max-alleles 2 \
+  --minDP 50 \
+  --out YOUR_Filtered \
+  --recode --recode-INFO-all

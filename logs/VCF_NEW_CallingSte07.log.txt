@@ -1,0 +1,52 @@
+/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/log4j-1.2.13.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/biojava3-alignment-3.0.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/geronimo-spec-activation-1.0.2-rc4.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/batik-awt-util.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/batik-gui-util.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/batik-gvt.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/batik-svggen.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/jfreechart-1.0.3.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/mail-1.4.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/ejml-0.23.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/itextpdf-5.1.0.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/batik-ext.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/forester.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/cisd-jhdf5-batteries_included_lin_win_mac.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/LiuExt.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/biojava3-core-3.0.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/colt.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/jcommon-1.0.6.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/batik-svg-dom.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/junit-4.10.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/xercesImpl.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/batik-xml.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/batik-parser.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/batik-css.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/biojava3-phylo-3.0.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/xmlParserAPIs.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/batik-util.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/xml.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/poi-3.0.1-FINAL-20070705.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/commons-math-2.2.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/guava-14.0.1.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/lib/batik-dom.jar:/home/phss/Documentos/DataScience/BackupGBS_ServerUNESP/tassel4-poly/dist/sTASSEL.jar
+Memory Settings: -Xms512m -Xmx20g
+Tassel Pipeline Arguments: -fork1 -MergeTagsByTaxaFilesPlugin -i tbt/ -o mergedTBT/alignment.tbt.shrt -x -endPlugin -runfork1
+[main] INFO net.maizegenetics.pipeline.TasselPipeline - Tassel Version: 4.3.7  Date: April 17, 2014
+[main] INFO net.maizegenetics.pipeline.TasselPipeline - Max Available Memory Reported by JVM: 18204 MB
+INFO - Merging the following .tbt.bin or .tbt.byte or .tbt.shrt files...
+[main] INFO net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin - Merging the following .tbt.bin or .tbt.byte or .tbt.shrt files...
+INFO - /home/phss/Documentos/DataScience/GBS_Tassel4Poly/tbt/AHVLYCDRX3_1.tbt.shrt
+[main] INFO net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin - /home/phss/Documentos/DataScience/GBS_Tassel4Poly/tbt/AHVLYCDRX3_1.tbt.shrt
+INFO - ...to "mergedTBT/alignment.tbt.shrt".
+[main] INFO net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin - ...to "mergedTBT/alignment.tbt.shrt".
+net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin
+INFO - Mutable Tag Count Created.  MaxTags:200000000
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin - Mutable Tag Count Created.  MaxTags:200000000
+INFO - CurrentSize:0
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin - CurrentSize:0
+INFO - Scanning /home/phss/Documentos/DataScience/GBS_Tassel4Poly/tbt/AHVLYCDRX3_1.tbt.shrt (file 1 of 1).
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin - Scanning /home/phss/Documentos/DataScience/GBS_Tassel4Poly/tbt/AHVLYCDRX3_1.tbt.shrt (file 1 of 1).
+nBytes to end of taxa names: 4592 
+Read tag0
+Number of Taxa in file:152
+Number of Haplotypes in file:63676
+INFO - CurrentSize:63676
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin - CurrentSize:63676
+INFO - Current Taxa:152
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin - Current Taxa:152
+Position index sort begin.
+Position index sort end.
+Position index sort begin.
+Position index sort end.
+Rows collapsed:0
+Unique tags retained:63676
+INFO - CurrentSize:63676
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin - CurrentSize:63676
+INFO - Size:200000000
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin - Size:200000000
+INFO - Size:63676
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin - Size:63676
+nBytes to end of taxa names: 2289 
+Read tag0
+Number of Taxa in file:152
+Number of Haplotypes in file:63676
+nBytes to end of taxa names: 2289 
+Read tag0
+Number of Taxa in file:152
+Number of Haplotypes in file:63676
+INFO - Scanning /home/phss/Documentos/DataScience/GBS_Tassel4Poly/tbt/AHVLYCDRX3_1.tbt.shrt (file 1 of 1).
+[Thread-0] INFO net.maizegenetics.gbs.pipeline.MergeTagsByTaxaFilesPlugin - Scanning /home/phss/Documentos/DataScience/GBS_Tassel4Poly/tbt/AHVLYCDRX3_1.tbt.shrt (file 1 of 1).
+nBytes to end of taxa names: 4592 
+Read tag0
+Number of Taxa in file:152
+Number of Haplotypes in file:63676
